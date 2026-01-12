@@ -1,0 +1,21 @@
+{
+  "rewrites": [
+    { "source": "/riddle/:id", "destination": "/riddle.html" },
+    { "source": "/invite/:id", "destination": "/riddle.html" },
+    { "source": "/daily", "destination": "/riddle.html" }
+  ],
+  "headers": [
+    {
+      "source": "/.well-known/apple-app-site-association",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" }
+      ]
+    },
+    {
+      "source": "/.well-known/assetlinks.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" }
+      ]
+    }
+  ]
+}
