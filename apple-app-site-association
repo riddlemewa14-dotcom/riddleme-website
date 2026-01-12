@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TEAM_ID.com.riddleme.app",
+        "paths": [
+          "/riddle/*",
+          "/invite/*",
+          "/daily"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "TEAM_ID.com.riddleme.app"
+    ]
+  }
+}
