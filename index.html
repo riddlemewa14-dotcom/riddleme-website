@@ -1,184 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Riddle.Me - Challenge Your Friends!</title>
-  
-  <!-- SEO -->
-  <meta name="description" content="Riddle.Me - The fun riddle game to challenge your friends! Solve daily riddles, compete on leaderboards, and share brain teasers.">
-  <meta name="keywords" content="riddle, puzzle, brain teaser, game, friends, challenge, daily riddle">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Riddle.Me - Challenge Your Friends!">
-  <meta property="og:description" content="The fun riddle game to challenge your friends! Solve daily riddles and compete on leaderboards.">
-  <meta property="og:image" content="https://riddleme.app/og-image.png">
-  <meta property="og:url" content="https://riddleme.app">
-  <meta property="og:type" content="website">
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Riddle.Me - Challenge Your Friends!">
-  <meta name="twitter:description" content="The fun riddle game to challenge your friends!">
-  
-  <!-- App Store Smart Banner -->
-  <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
-  
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
-      min-height: 100vh;
-      color: white;
-    }
-    
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    
-    .logo {
-      font-size: 80px;
-      margin-bottom: 20px;
-      animation: bounce 2s infinite;
-    }
-    
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    
-    h1 {
-      font-size: 48px;
-      font-weight: 800;
-      margin-bottom: 15px;
-    }
-    
-    .tagline {
-      font-size: 24px;
-      opacity: 0.9;
-      margin-bottom: 40px;
-      max-width: 500px;
-    }
-    
-    .features {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 50px;
-      max-width: 800px;
-    }
-    
-    .feature {
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      padding: 25px;
-      width: 220px;
-      text-align: center;
-    }
-    
-    .feature-icon { font-size: 36px; margin-bottom: 10px; }
-    .feature h3 { font-size: 18px; margin-bottom: 8px; }
-    .feature p { font-size: 14px; opacity: 0.8; }
-    
-    .stores {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-    .store-btn {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      background: white;
-      color: #1F2937;
-      padding: 16px 28px;
-      border-radius: 14px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    
-    .store-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-    }
-    
-    .store-btn img {
-      height: 28px;
-    }
-    
-    footer {
-      text-align: center;
-      padding: 30px;
-      opacity: 0.8;
-    }
-    
-    footer a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    
-    footer a:hover { text-decoration: underline; }
-    
-    @media (max-width: 600px) {
-      h1 { font-size: 36px; }
-      .tagline { font-size: 18px; }
-      .feature { width: 100%; max-width: 280px; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle.Me - Daily Brain Games</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 64px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #9359F8 0%, #F0A0FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .tagline {
+            font-size: 20px;
+            color: #a0a0a0;
+            margin-bottom: 40px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        .feature {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: left;
+        }
+        .feature-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .feature-desc {
+            font-size: 13px;
+            color: #a0a0a0;
+        }
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #9359F8 0%, #7C3AED 100%);
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(147, 89, 248, 0.4);
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(147, 89, 248, 0.5);
+        }
+        .download-btn img {
+            height: 24px;
+        }
+        .footer {
+            margin-top: 60px;
+            color: #666;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #9359F8;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 500px) {
+            h1 { font-size: 36px; }
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-  <div class="hero">
-    <div class="logo">🧩</div>
-    <h1>Riddle.Me</h1>
-    <p class="tagline">Challenge your friends with brain-teasing riddles. Solve daily puzzles. Compete on leaderboards!</p>
-    
-    <div class="features">
-      <div class="feature">
-        <div class="feature-icon">📅</div>
-        <h3>Daily Riddles</h3>
-        <p>New riddle every day. Keep your streak going!</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">👥</div>
-        <h3>Challenge Friends</h3>
-        <p>Send riddles to friends and see who's smarter!</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">🏆</div>
-        <h3>Leaderboards</h3>
-        <p>Compete with friends and global players.</p>
-      </div>
+    <div class="container">
+        <div class="logo">🧩</div>
+        <h1>Riddle.Me</h1>
+        <p class="tagline">Daily Brain Games - Challenge Your Mind</p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-title">Daily Riddles</div>
+                <div class="feature-desc">New challenge every day</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏆</div>
+                <div class="feature-title">Leaderboards</div>
+                <div class="feature-desc">Compete globally</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔥</div>
+                <div class="feature-title">Streaks</div>
+                <div class="feature-desc">Keep your streak alive</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">👥</div>
+                <div class="feature-title">Challenge Friends</div>
+                <div class="feature-desc">Send riddles to friends</div>
+            </div>
+        </div>
+        
+        <a href="https://apps.apple.com/app/riddle-me-daily-brain-games/id6758519487" class="download-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            Download on App Store
+        </a>
+        
+        <div class="footer">
+            <p>&copy; 2026 Riddle.Me. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="/support">Support</a> · 
+                <a href="/privacy">Privacy Policy</a> · 
+                <a href="/terms">Terms of Service</a>
+            </p>
+        </div>
     </div>
-    
-    <div class="stores">
-      <a href="https://apps.apple.com/app/riddleme/idYOUR_APP_ID" class="store-btn">
-        🍎 Download on App Store
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=com.riddleme.app" class="store-btn">
-        🤖 Get it on Google Play
-      </a>
-    </div>
-  </div>
-  
-  <footer>
-    <a href="/privacy.html">Privacy Policy</a>
-    <a href="/terms.html">Terms of Service</a>
-    <a href="/support.html">Support</a>
-    <p style="margin-top: 15px;">© 2026 Riddle.Me. All rights reserved.</p>
-  </footer>
 </body>
 </html>
