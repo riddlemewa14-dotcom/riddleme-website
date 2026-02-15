@@ -5,164 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - Riddle.Me</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
-            color: #ffffff;
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .back-link {
-            color: #9359F8;
-            text-decoration: none;
-            font-size: 14px;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            margin-bottom: 30px;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        h1 {
-            font-size: 36px;
-            font-weight: 800;
-            margin-bottom: 10px;
-            background: linear-gradient(135deg, #9359F8 0%, #F0A0FF 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .subtitle {
-            color: #a0a0a0;
-            margin-bottom: 40px;
-        }
-        .section {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            font-size: 18px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .section p {
-            color: #a0a0a0;
-            line-height: 1.6;
-            font-size: 15px;
-        }
-        .section a {
-            color: #9359F8;
-            text-decoration: none;
-        }
-        .section a:hover {
-            text-decoration: underline;
-        }
-        .faq-item {
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            padding: 16px 0;
-        }
-        .faq-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-        .faq-item:first-child {
-            padding-top: 0;
-        }
-        .faq-q {
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-        .faq-a {
-            color: #a0a0a0;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-        }
-        .footer a {
-            color: #9359F8;
-            text-decoration: none;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FFFFFF; color: #1A1A1A; min-height: 100vh; padding: 40px 20px; line-height: 1.7; }
+        .container { max-width: 720px; margin: 0 auto; }
+        .back-link { color: #0D59A5; text-decoration: none; font-size: 14px; margin-bottom: 30px; display: inline-block; }
+        h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; color: #0F172A; }
+        .subtitle { color: #6B7280; margin-bottom: 36px; font-size: 16px; }
+        h2 { font-size: 20px; margin-top: 28px; margin-bottom: 12px; color: #0F172A; }
+        p, li { color: #4B5563; margin-bottom: 14px; }
+        ul { margin-left: 24px; margin-bottom: 14px; }
+        a { color: #0D59A5; }
+        .contact-box { background: #F8FAFC; border: 1px solid #E5E7EB; border-radius: 8px; padding: 24px; margin: 24px 0; }
+        .contact-box p { margin-bottom: 8px; }
+        .footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid #E5E7EB; text-align: center; color: #9CA3AF; font-size: 13px; }
     </style>
 </head>
 <body>
     <div class="container">
         <a href="/" class="back-link">← Back to Riddle.Me</a>
-        
         <h1>Support</h1>
-        <p class="subtitle">We're here to help!</p>
-        
-        <div class="section">
-            <h2>📧 Contact Us</h2>
-            <p>Have a question, feedback, or issue? Email us at:<br><br>
-            <a href="mailto:support@riddleme.app">support@riddleme.app</a><br><br>
-            We typically respond within 24-48 hours.</p>
+        <p class="subtitle">We're here to help. Find answers to common questions or get in touch.</p>
+
+        <div class="contact-box">
+            <p><strong>Email us:</strong> <a href="mailto:support@riddleme.app">support@riddleme.app</a></p>
+            <p>We typically respond within 24 hours.</p>
         </div>
-        
-        <div class="section">
-            <h2>❓ FAQ</h2>
-            
-            <div class="faq-item">
-                <div class="faq-q">How do I restore my Premium subscription?</div>
-                <div class="faq-a">Go to the Premium screen and tap "Restore Purchase". Make sure you're signed in with the same Apple ID used for the original purchase.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-q">Why did I lose my streak?</div>
-                <div class="faq-a">Streaks reset if you don't solve the daily riddle before midnight (your local time). Premium members get Streak Savers to protect their streaks!</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-q">How do I add friends?</div>
-                <div class="faq-a">Go to the Friends tab and tap the + button. You can search for friends by their username or share your invite link.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-q">How do hints work?</div>
-                <div class="faq-a">Each riddle has 3 progressive hints. Free users get limited hints, while Premium members have unlimited hints.</div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-q">How do I cancel my subscription?</div>
-                <div class="faq-a">Subscriptions are managed through your Apple ID. Go to Settings > Apple ID > Subscriptions on your iPhone to manage or cancel.</div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2>🐛 Report a Bug</h2>
-            <p>Found a bug? Please email us at <a href="mailto:support@riddleme.app">support@riddleme.app</a> with:
-            <br><br>
-            • Description of the issue<br>
-            • Steps to reproduce<br>
-            • Your device model and iOS version<br>
-            • Screenshot if possible</p>
-        </div>
-        
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h2>How do I reset my password?</h2>
+        <p>Go to the login screen and tap "Forgot Password". Enter your email address and we'll send you a reset link.</p>
+
+        <h2>How do I cancel my subscription?</h2>
+        <p>Subscriptions are managed through Apple. Go to your iPhone Settings → tap your name → Subscriptions → Riddle.Me → Cancel Subscription.</p>
+
+        <h2>I lost my streak. Can you restore it?</h2>
+        <p>Premium subscribers have access to Streak Savers. If you believe your streak was lost due to a technical issue, please contact us with your username and we'll look into it.</p>
+
+        <h2>How do I delete my account?</h2>
+        <p>Go to Settings in the app → scroll to the bottom → tap "Delete Account". This will permanently remove your account and all associated data. You can also email us to request deletion.</p>
+
+        <h2>The app is crashing. What should I do?</h2>
+        <p>Try these steps:</p>
+        <ul>
+            <li>Close and reopen the app</li>
+            <li>Check for app updates in the App Store</li>
+            <li>Restart your device</li>
+            <li>If the issue persists, email us with your device model and iOS version</li>
+        </ul>
+
+        <h2>How do I add friends?</h2>
+        <p>Go to the Friends tab → tap the search icon → search for your friend's username → send a friend request. You can also share your invite link directly.</p>
+
+        <h2>How does the daily riddle work?</h2>
+        <p>A new riddle is posted every day at midnight UTC. Everyone gets the same riddle. Solve it to earn XP and maintain your streak. You have until midnight to complete it.</p>
+
         <div class="footer">
             <p>&copy; 2026 Riddle.Me. All rights reserved.</p>
-            <p style="margin-top: 8px;">
-                <a href="/privacy">Privacy Policy</a> · 
-                <a href="/terms">Terms of Service</a>
-            </p>
+            <p style="margin-top: 8px;"><a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="/support">Support</a></p>
         </div>
     </div>
 </body>
