@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "rewrites": [
     { "source": "/riddle/:id", "destination": "/riddle.html" },
     { "source": "/invite/:id", "destination": "/riddle.html" },
